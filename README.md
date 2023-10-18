@@ -1,7 +1,7 @@
-# Astro Starter Kit: Basics
+# Astro Starter Kit with Tailwind CSS, Prettier and ESLint
 
 ```sh
-npm create astro@latest -- --template basics
+npm create astro@latest -- --template ixkaito/astro-starter
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
