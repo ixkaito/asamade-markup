@@ -7,7 +7,14 @@ module.exports = {
       fraunces: "'Fraunces', serif",
       italiana: "'Italiana', sans-serif",
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        25: 'repeat(25, minmax(0, 1fr))',
+      },
+      gridRow: {
+        'span-7': 'span 7 / span 7',
+      },
+    },
   },
   plugins: [],
 };

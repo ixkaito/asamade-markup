@@ -26,27 +26,61 @@
       requestAnimationFrame(raf);
     </script>
   </head>
-  <body class="bg-white">
+  <body class="bg-neutral-50 font-jost">
     <header
-      class="pointer-events-none fixed inset-x-0 grid h-[100svh] content-center px-[4vw] text-center uppercase leading-none text-neutral-300 mix-blend-exclusion"
+      class="pointer-events-none fixed inset-x-0 z-50 grid h-[100svh] content-center px-[4vw] text-center uppercase leading-none text-neutral-300 mix-blend-exclusion"
     >
-      <h1 class="text-[max(10vw,8rem)]">
-        <span class="font-fraunces normal-case italic">Emily</span>
-        {' '}
-        <span class="font-italiana">Davis</span>
-      </h1>
+      <h1 class="text-[8rem]">Emily Davis</h1>
       <p class="mt-[1.5em] text-[max(1.25vw,1rem)]">Your Style, Our Creation</p>
     </header>
-    <div>
-      <img src="/images/a.jpg" alt="" />
-      <img src="/images/b.jpg" alt="" />
-      <img src="/images/c.jpg" alt="" />
-      <img src="/images/d.jpg" alt="" />
-      <img src="/images/e.jpg" alt="" />
-      <img src="/images/f.jpg" alt="" />
-      <img src="/images/g.jpg" alt="" />
-      <img src="/images/h.jpg" alt="" />
-      <img src="/images/i.jpg" alt="" />
+    <div
+      class="grid auto-rows-[10vw] grid-cols-10 [&_img]:h-full [&_img]:w-full [&_img]:object-cover"
+    >
+      <img
+        src="/images/a.jpg"
+        alt=""
+        class="col-span-3 col-start-2 row-span-4"
+      />
+      <img
+        src="/images/b.jpg"
+        alt=""
+        class="col-span-5 col-start-4 row-span-7 row-start-7"
+      />
+      <img
+        src="/images/c.jpg"
+        alt=""
+        class="col-span-3 col-start-3 row-span-4 row-start-[13]"
+      />
+      <img
+        src="/images/d.jpg"
+        alt=""
+        class="col-span-3 col-start-7 row-span-4 row-start-[18]"
+      />
+      <img
+        src="/images/e.jpg"
+        alt=""
+        class="col-span-3 col-start-5 row-span-3 row-start-[25]"
+      />
+      <img
+        src="/images/f.jpg"
+        alt=""
+        class="col-span-4 col-start-3 row-span-6 row-start-[30]"
+      />
+      <img
+        src="/images/g.jpg"
+        alt=""
+        class="col-span-3 col-start-8 row-span-2 row-start-[39]"
+      />
+      <img
+        src="/images/h.jpg"
+        alt=""
+        class="z-10 col-span-4 col-start-6 row-span-3 row-start-[44]"
+      />
+      <img
+        src="/images/i.jpg"
+        alt=""
+        class="col-span-4 col-start-3 row-span-6 row-start-[46]"
+      />
     </div>
   </body>
 </html>
