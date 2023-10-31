@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+import plugin from 'tailwindcss/plugin';
+import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
+
 module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
@@ -16,5 +19,27 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchComponents, theme }) {
+      matchComponents(
+        {
+          button: (value) => ({
+            color: value,
+            borderRadius: '100vmax',
+            border: `1px solid ${value}`,
+            padding: '0.5em 1em',
+            transition: 'all 0.1s',
+
+            '&:hover': {
+              color: theme('colors.white'),
+              backgroundColor: value,
+            },
+          }),
+        },
+        {
+          values: flattenColorPalette(theme('colors')),
+        },
+      );
+    }),
+  ],
 };
