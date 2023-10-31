@@ -1,4 +1,4 @@
-# Astro Starter Kit with Tailwind CSS, Prettier and ESLint
+# Tailwind CSS Sample Code for [#朝までマークアップ](https://cssnite.doorkeeper.jp/events/163736)
 
 ```sh
 npm create astro@latest -- --template ixkaito/astro-starter
