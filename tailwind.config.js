@@ -20,7 +20,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ matchComponents, theme }) {
+    plugin(function ({ matchComponents, theme, addVariant }) {
       matchComponents(
         {
           button: (value) => ({
@@ -40,6 +40,8 @@ module.exports = {
           values: flattenColorPalette(theme('colors')),
         },
       );
+
+      addVariant('touch', '@media (hover: none)');
     }),
   ],
 };

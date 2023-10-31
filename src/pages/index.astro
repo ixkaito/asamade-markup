@@ -16,7 +16,9 @@
     <script>
       import Lenis from '@studio-freight/lenis';
 
-      const lenis = new Lenis();
+      const lenis = new Lenis({
+        infinite: true,
+      });
 
       function raf(time: number) {
         lenis.raf(time);
@@ -44,6 +46,55 @@
     </header>
     <div
       class="grid auto-rows-[10vw] grid-cols-10 xl:auto-rows-[4vw] xl:grid-cols-25 [&_img]:h-full [&_img]:w-full [&_img]:object-cover"
+    >
+      <img
+        src="/images/a.jpg"
+        alt=""
+        class="col-span-3 col-start-2 row-span-4"
+      />
+      <img
+        src="/images/b.jpg"
+        alt=""
+        class="col-span-5 col-start-4 row-span-7 row-start-7 xl:row-start-6"
+      />
+      <img
+        src="/images/c.jpg"
+        alt=""
+        class="col-span-3 col-start-3 row-span-4 row-start-[13] xl:row-start-[12]"
+      />
+      <img
+        src="/images/d.jpg"
+        alt=""
+        class="col-span-3 col-start-7 row-span-4 row-start-[18] xl:col-start-[14] xl:row-start-2"
+      />
+      <img
+        src="/images/e.jpg"
+        alt=""
+        class="col-span-3 col-start-5 row-span-3 row-start-[25] xl:col-start-12 xl:row-start-[9]"
+      />
+      <img
+        src="/images/f.jpg"
+        alt=""
+        class="col-span-4 col-start-3 row-span-6 row-start-[30] xl:col-start-10 xl:row-start-[14]"
+      />
+      <img
+        src="/images/g.jpg"
+        alt=""
+        class="col-span-3 col-start-8 row-span-2 row-start-[39] xl:col-start-[23] xl:row-start-4"
+      />
+      <img
+        src="/images/h.jpg"
+        alt=""
+        class="z-10 col-span-4 col-start-6 row-span-3 row-start-[44] xl:col-start-[21] xl:row-start-[9]"
+      />
+      <img
+        src="/images/i.jpg"
+        alt=""
+        class="col-span-4 col-start-3 row-span-6 row-start-[46] xl:col-start-[18] xl:row-start-[11]"
+      />
+    </div>
+    <div
+      class="grid h-screen auto-rows-[10vw] grid-cols-10 overflow-hidden touch:hidden xl:auto-rows-[4vw] xl:grid-cols-25 [&_img]:h-full [&_img]:w-full [&_img]:object-cover"
     >
       <img
         src="/images/a.jpg"
